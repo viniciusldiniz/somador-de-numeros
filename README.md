@@ -1,4 +1,4 @@
-<img src="" border="0">
+
 
 # Pequeno Projeto com javascript 
 
@@ -13,4 +13,4 @@
 Não tem outra maneira para se aprender além de praticar, praticar, pois a pratica leva a perfeição.
 Com isso fiz uma calculadora com Jscript.
 
-## é só um somador de numeros.
+é só um somador de numeros.
