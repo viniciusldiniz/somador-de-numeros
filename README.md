@@ -11,6 +11,6 @@
 
 ## Objetivo
 Não tem outra maneira para se aprender além de praticar, praticar, pois a pratica leva a perfeição.
-Com isso fiz uma calculadora com Jscript.
+Com isso fiz um  somador de numeros com Jscript.
 
-é só um somador de numeros.
+
