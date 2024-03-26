@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do documento como Português (Brasil) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a largura da tela como o dispositivo, escala inicial como 1.0 -->
+    <title>Somando Números</title> <!-- Define o título da página -->
+    <style>
+        body {
+            font: normal 18pt arial;
+            /* Define o estilo da fonte para o corpo do documento */
+        }
+
+        input {
+            font: normal 18pt arial;
+            /* Define o estilo da fonte para os inputs */
+            width: 100px;
+            /* Define a largura dos inputs como 100 pixels */
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1> <!-- Título principal da página -->
+    <input type="number" name="textonumero1" id="textonumero1"> <!-- Input para o primeiro número -->
+    <input type="number" name="textonumero2" id="textonumero2"> <!-- Input para o segundo número -->
+    <input type="button" value="somar" onclick="somar()"> <!-- Botão para acionar a função de soma -->
+    <div id="res">resultado</div> <!-- Div para exibir o resultado da soma -->
+    <script>
+        function somar() {
+            var n1 = document.getElementById('textonumero1'); <!-- Obtém o elemento input do primeiro número -->
+            var n2 = document.querySelector('input#textonumero2'); < !--Obtém o elemento input do segundo número-- >
+            var res = document.getElementById('res'); < !--Obtém o elemento div onde o resultado será exibido-- >
+            var num1 = Number(n1.value);  //transforma o valor do input em um número
+            var num2 = Number(n2.value); < !--Converte os valores dos inputs para números-- >
+            var s = num1 + num2; < !--Realiza a operação de soma-- >
+                res.innerHTML = `A soma entre ${num1} e ${num2} é igual a <strong>${s}</strong>`;   //coloca na tela o resultado da soma <!-- Exibe o resultado da soma na div -->
+        }
+    </script> <!-- Fim do script -->
+</body> <!-- Fim do corpo do documento -->
+
+</html> <!-- Fim do documento HTML -->
